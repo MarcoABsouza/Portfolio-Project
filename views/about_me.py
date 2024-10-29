@@ -1,9 +1,4 @@
 import streamlit as st
-from forms.contact import contact_form
-
-@st.dialog('Contact me')
-def show_contact_form():
-    contact_form()
 
 # --- Section --- #
 col1, col2 = st.columns(2, gap='small', vertical_alignment='center')
@@ -14,9 +9,8 @@ with col2:
     st.write(
         " Hi, I'm a recent Computer Science graduate ready to turn data into strategic information and drive smart decision-making. I'm also ready to create automations and systems to simplify everyday tasks. "
     )
-    if st.button(":material/mail: Contact me"):
-        show_contact_form()
-
+    st.subheader("Contact Me")
+    st.write(":material/mail: mabdsouza@outlook.com")
 
 # --- Experience & Qualifications --- #
 st.write("\n")
